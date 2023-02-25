@@ -8,8 +8,16 @@ void nhapPS(Phanso &ps)
 {
 	cout << "\nNhap tu so: ";
 	cin >> ps.tuso;
-	cout << "\nNhap mau so";
-	cin >> ps.mauso;
+	do
+	{
+		is(ps.mauso==0)
+		{
+			cout << "\nNhap mau so";
+			cin >> ps.mauso;
+			cout<<"mau so khong hop le!! vui long nhap lai";
+		}
+		
+	} while(ps.mauso==0)
 }
 void xuatPS(Phanso ps)
 {
